@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Zad1</title>
+</head>
+<body>
+    <div>
+        <input type="button" id="btn1" name="przycisk1" value="100">
+        <br>
+        <input type="button" id="btn2" name="przycisk2" value="200">
+        <br>
+        <input type="button" id="btn3" name="przycisk3" value="300">
+        <br>
+        <input type="button" id="btn4" name="przycisk4" value="400">
+        <br>
+        <input type="button" id="btn5" name="przycisk5" value="500">
+        <br>
+    </div>
+    
+    <script>
+        let info = document.createElement("span");
+        document.body.append(info);
+        btn1.addEventListener("click", function(){
+            document.querySelector("span").innerHTML = "nazwa: "+btn1.name+"<br>wartość: "+btn1.value;
+        })
+        btn2.addEventListener("click", function(){
+            document.querySelector("span").innerHTML = "nazwa: "+btn2.name+"<br>wartość: "+btn2.value;
+        })
+        btn3.addEventListener("click", function(){
+            document.querySelector("span").innerHTML = "nazwa: "+btn3.name+"<br>wartość: "+btn3.value;
+        })
+        btn4.addEventListener("click", function(){
+            document.querySelector("span").innerHTML = "nazwa: "+btn4.name+"<br>wartość: "+btn4.value;
+        })
+        btn5.addEventListener("click", function(){
+            document.querySelector("span").innerHTML = "nazwa: "+btn5.name+"<br>wartość: "+btn5.value;
+        })
+        
+        /*stwórz tablicę z 7 losowo wybranych wartości następnie wyświetl wynik dodawania wszystkich elementów tablicy
+        */
+        
+        
+    </script>
+    
+</body>
+</html>

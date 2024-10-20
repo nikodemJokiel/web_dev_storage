@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<head>
+		<title>js kartkówka</title>
+		<meta charset="UTF-8"/>
+        <style>
+            
+        
+        </style>
+    </head>
+	<body>
+       <h1>Sprawdzamy umiejętności</h1>
+        <div>
+            <p>Akapit pierwszy</p>
+            <p>Akapit drugi</p>
+            <p>Akapit trzeci</p>
+            <a href="#">odnośnik, który jest dzieckiem</a>
+        </div>
+        <a href="#">odnośnik, który jest samodzielny</a>
+        <p>Akapit czwarty</p>
+        <div class="asd">
+            <p>Akapit </p>
+        </div>
+        <button id="btn">zmiana 1</button>
+        <button id="btn1">zmiana 2</button>
+        <button id="btn2">zmiana 3</button>
+        
+        <!--Napisz skrypt, który przypisze zdarzenia metodą - dblclick -  do przycisków:
+
+        1. przycisk 1 - ma ustalić styl czcionki  elementowi  <a> będącemu dzieckiem <div> 
+        
+        2. przycisk 2 - ma dodać obramowanie do drugiego elementu <p>
+
+        3. przycisk 3 - ma zmienić tekst na wielkie litery dla wszystkich elementów <p>
+
+        NIE WOLNO DODAWAĆ WŁASNYCH ATRYBUTÓW, stosuj tylko metody querySelector, querySelectorAll, getElementsByClassName, getElementsByTagName
+        -->
+        
+        <script>
+            
+            document.querySelector("button:nth-of-type(1)").ondblclick = 
+            function (){
+                document.querySelector("div > a").style.fontStyle = "Italic";
+                
+            }   
+            document.querySelector("button:nth-of-type(2)").ondblclick = 
+            function (){
+                document.querySelector("p:nth-of-type(2)").style.border="1px solid black";
+                
+            }  
+            document.querySelector("button:nth-of-type(3)").ondblclick = 
+            function (){
+                let akapit = document.querySelectorAll("p");
+                for(x of akapit){
+                    x.style.textTransform="uppercase";
+                }
+                
+            }  
+        </script>
+	</body>
+</html>

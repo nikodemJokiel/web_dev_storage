@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>zadanie</title>
+</head>
+<body>
+    <form id="_form">
+        <label for="imie">Imię:</label>
+        <input type="text" name="imie" id="name">
+        <br>
+        <br>
+        <label for="nazwisko">Nazwisko:</label>
+        <input type="text" name="nawzwisko" id="surname">
+        <br>
+        <br>
+
+        <label for="miejsce">Miejsce zamieszkania:</label>
+        <input type="text" name="miejsce" id="place">
+        <br>
+        <br>
+        <label for="klasa">klasa:</label>
+        <input type="number" name="klasa" id="_class" max="8" min="1">
+        <br>
+        <br>
+        <input type="reset" id="res" value="resetuj">
+        
+        <input type="button" id="sub" value="zatwierdź">
+        <br>
+        <br>
+        <p id="login"></p>
+        <p id="pass"></p>
+        <p id="mail"></p>
+    </form>
+    
+    <script>
+        sub.addEventListener("click",function(){
+            let n = _form.name.value;
+            let s = _form.surname.value;
+            let p = _form.place.value;
+            let c = _form._class.value;
+            login.innerHTML = "Twój login: " + n.substring(0,3) + "_" + s.substring(0,3)+ "_" + c;
+            let password = String(n.substring(n.length-3,n.length)+s.substring(s.length-3,s.length));
+            //password=password.substring(0,1).toUpperCase();
+            //password=password.toUpperCase();
+            
+            
+            pass.innerHTML = "Twoje hasło: " + password.substring(0,1).toUpperCase() + password.substring(1,3) + password.substring(3,4).toUpperCase() + password.substring(4,6); 
+
+            let m = n + "." + s + "@" + p + ".pl"; 
+
+            m = m.toLowerCase(); 
+
+            mail.innerHTML = "Twój mail: " + m; 
+
+ 
+
+        }) 
+
+    </script>
+</body>
+</html>

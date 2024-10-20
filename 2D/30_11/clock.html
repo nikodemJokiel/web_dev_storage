@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Clock</title>
+</head>
+<body>
+    <div id="clock">
+        <img id="d1" src="0.png">
+        <img id="d2" src="0.png">
+        <img id="d3" src="dwukropek.png">
+        <img id="d4" src="0.png">
+        <img id="d5" src="0.png">
+        <img id="d6" src="dwukropek.png">
+        <img id="d7" src="0.png">
+        <img id="d8" src="0.png">
+        
+    
+    </div>
+    <script>
+        var myTimer = setInterval(myTime,1000);
+        function myTime(){
+            let data = new Date();
+            let godzina = data.getHours();
+            if (godzina < 10) { godzina = String("0" + godzina); }
+            let minuta = data.getMinutes();
+            if (minuta < 10) { minuta = String("0" + minuta); }
+            let sekunda = data.getSeconds();
+            if (sekunda < 10) { sekunda = String("0" + sekunda); }
+            
+            
+            let d1_val;
+            if(godzina<10)
+            {
+                d1_val = 0;
+            }
+            else
+            {
+                d1_val = parseInt(godzina/10);   
+            }
+            d1.setAttribute("src",d1_val+".png")
+            
+            let d2_val = Number(godzina%10);
+            d2.setAttribute("src",d2_val+".png")
+            
+            let d4_val;
+            if(minuta<10)
+            {
+                d4_val = 0;
+            }
+            else
+            {
+                d4_val = parseInt(minuta/10);   
+            }
+            d4.setAttribute("src",d4_val+".png")
+            
+            let d5_val = Number(minuta%10);
+            d5.setAttribute("src",d5_val+".png")
+            
+            let d7_val;
+            if(sekunda<10)
+            {
+                d7_val = 0;
+            }
+            else
+            {
+                d7_val = parseInt(sekunda/10);   
+            }
+            d7.setAttribute("src",d7_val+".png")
+            
+            let d8_val = Number(sekunda%10);
+            d8.setAttribute("src",d8_val+".png")
+        }
+        //console.log(curentDate.getMilliseconds);
+        
+    </script>
+    
+</body>
+</html>

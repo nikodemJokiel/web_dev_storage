@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="styl.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Galeria</h1>
+        <input type="button" id="logOut" value="Wyloguj się">
+    </header>
+    <div id="locked">
+        <label for="log">Podaj login:</label>
+        <input type="text" id="log">
+        <label for="pass">Podaj hasło:</label>
+        <input type="password" id="pass">
+        <input type="button" id="logIn" value="Zaloguj się">
+        <p id="message"></p>
+        <p id="message2"></p>
+    </div>
+    <nav id="CreateAccount">
+        <h4>Utwórz konto</h4>
+        <label for="Clog">Podaj login:</label>
+        <input type="text" id="Clog">
+        <label for="Cpass">Podaj hasło:</label>
+        <input type="password" id="Cpass">
+        <input type="button" id="createA" value="Utwórz konto">
+    </nav>
+    
+    <div id="unlocked">
+        <img src="siamese-crocodile-8509003_1280.jpg" alt="crocodile">
+        <img src="siamese-crocodile-8509003_1280.jpg" alt="crocodile">
+        <img src="siamese-crocodile-8509003_1280.jpg" alt="crocodile">
+        <img src="siamese-crocodile-8509003_1280.jpg" alt="crocodile">
+        <img src="siamese-crocodile-8509003_1280.jpg" alt="crocodile">
+        <img src="siamese-crocodile-8509003_1280.jpg" alt="crocodile">
+       
+    </div>    
+    <footer>
+        <p>Nikodem Jokiel</p>
+    </footer>
+    <script>
+        const logins = new Array("admin", "user1", "user2");
+        const passwords = new Array("admin123", "haslo", "maslo");
+        logIn.addEventListener("click", function(){
+            for(let i = 0; i<logins.length; i++ ){
+                if(pass.value==passwords[i] && log.value == logins[i]){
+                    locked.style.display = "none";
+                    unlocked.style.display = "flex";
+                }
+               
+            }
+            message.innerHTML = "Podaj poprawne hasło lub login.";
+            message2.innerHTML = "Jeżeli nie masz konta utwórz je";
+            message2.style.color = "blue";
+            message2.style.textDecoration = "underline";
+            
+            
+            
+        })
+        
+        logOut.addEventListener("click", function(){
+            
+            locked.style.display = "flex";
+            unlocked.style.display = "none";
+            
+        })
+        
+        message2.addEventListener("click", function(){
+            
+            locked.style.display = "flex";
+            unlocked.style.display = "none";
+            
+        })
+    
+    </script>
+</body>
+</html>

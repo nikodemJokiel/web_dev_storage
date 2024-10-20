@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zad1</title>
+</head>
+<body>
+    <h1>Podaj tekst</h1>
+    <form>
+        <label>
+
+        </label>
+        <textarea id="tekst"></textarea>
+        <input type="button" value="zamień" id="btn">
+        <br>
+        <p id="wynik"></p>
+        <br>
+        <select id="wielkosc">
+            <option value="10">mały</option>
+            <option value="20">średni</option>
+            <option value="50">duży</option>
+        </select>
+        
+        <br>
+        
+            <input type="radio" value="red" name="textColor" id="cz">czerwony
+            <br>
+            <input type="radio" value="green" name="textColor" id="zi">zielony
+            <br>
+            <input type="radio" value="blue" name="textColor" id="ni">niebieski
+       
+        
+        <br>
+        <select id="font">
+            <option value="arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Monospace">Monospace</option>
+        </select>
+        
+        <br>
+        <label >
+            <input type="color" name="bccolor" id="kolor1">
+        </label>
+        
+    </form>
+    <script>
+        btn.onclick = () =>{
+            let dane = tekst.value;
+            let size = wielkosc.value;
+            let czcionka = font.value;
+            let kolor = kolor1.value;
+
+            document.body.style.backgroundColor = kolor;
+
+            wynik.innerHTML = dane;
+            wynik.style.fontSize = size+"px";
+            wynik.style.fontFamily = czcionka;
+
+            if(cz.checked){
+                wynik.style.color = "red";
+            }
+            else if (zi.checked){
+                wynik.style.color = "green"
+            }
+            else if (ni.checked){
+                wynik.style.color = "green"
+            }
+        }
+
+    </script>
+</body>
+</html>

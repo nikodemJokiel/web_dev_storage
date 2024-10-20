@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Zad2</title>
+    <style>
+        
+        .fancy{
+            font-weight: bold;
+            font-size: 40px;
+            font-family: Monospace;
+
+        }
+    </style>
+</head>
+<body>
+    <p>oblicz koszt odstawy</p>
+    <br>
+    <label>
+        <input type="checkbox" name="zielona" id="czyjest">Jestem z Zielonej Góry
+    </label>
+    <br>
+    <label>Podaj liczbę km do Zielonej Góry
+        <input type="number" name="kilometry" id="km">
+    </label>
+    <button id="btn">Oblicz</button>
+    <p id="p"></p>
+    <script>
+
+         btn.onclick = () =>{
+            
+            let kilometry = km.value;
+            let cena = kilometry*2;
+            document.querySelector("p").classList.toggle("fancy");
+
+            
+            
+            if(czyjest.checked){
+              p.innerHTML = "Dowóz pizzy za darmo";
+            }
+            else{
+                p.innerHTML = "koszt dowozu: "+cena+"zł";
+            }
+            
+           
+        }
+    </script>
+</body>
+</html>

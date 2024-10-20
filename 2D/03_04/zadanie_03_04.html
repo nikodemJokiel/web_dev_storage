@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>zadanie</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        main{
+            width: 100vw;
+            height: 70vh;
+        }
+        nav{
+            width: 100vw;
+            height: 30vh;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+        }
+        main>img{
+            height: 100%;
+            width: auto;
+        }
+        nav>img{
+            height: 90%;
+            width: auto;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+            $("#i2").click(function(){
+                $(this).animate({borderRadius: '70px'},200,function(){
+                    $(this).animate({borderRadius: '0px'})
+                })
+                $("#i1").fadeOut(250, function(){
+                    $("#i1").attr("src", "jellyfish-2566795_1280.jpg");
+                    $("#i1").fadeIn(500)
+                    
+                })
+                
+            })
+            
+            $("#i3").click(function(){
+                $(this).animate({borderRadius: '70px'},200,function(){
+                     $(this).animate({borderRadius: '0px'})
+                })
+                $("#i1").fadeOut(250, function(){
+                    $("#i1").attr("src", "people-2568247_1280.jpg");
+                    $("#i1").fadeIn(500)
+                })
+            })
+            
+            $("#i4").click(function(){
+                $(this).animate({borderRadius: '70px'},200,function(){
+                    $(this).animate({borderRadius: '0px'})
+                 })
+                $("#i1").fadeOut(250, function(){
+                    $("#i1").attr("src", "water-8200502_1280.jpg");
+                    $("#i1").fadeIn(500)
+                })
+            })
+            
+            $("#i5").click(function(){
+                $(this).animate({borderRadius: '70px'},200,function(){
+                    $(this).animate({borderRadius: '0px'})
+                })
+                $("#i1").fadeOut(250, function(){
+                    $("#i1").attr("src", "bark-8526227_1280.jpg");
+                    $("#i1").fadeIn(500)
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <main>
+        <img id="i1" src="jellyfish-2566795_1280.jpg">
+    </main>
+    <nav>
+        <img id="i2" src="jellyfish-2566795_1280.jpg">
+        <img id="i3" src="people-2568247_1280.jpg">
+        <img id="i4" src="water-8200502_1280.jpg">
+        <img id="i5" src="bark-8526227_1280.jpg">
+    </nav>
+    
+
+</body>
+</html>

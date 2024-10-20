@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Zad2</title>
+</head>
+<body>
+    <p id="addition"></p>
+    <script>
+        
+        let numbers = new Array(7);
+        let sum = 0;
+        for(let i = 0; i<numbers.length; i++){
+            numbers[i] = parseInt(Math.floor(Math.random()*10));
+            sum+=numbers[i];
+            
+        }
+        addition.innerHTML = "Suma wylosowanych cyfr: " + numbers.join("+") + " = " + sum;
+        
+        
+    </script>
+    
+</body>
+</html>

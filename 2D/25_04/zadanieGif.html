@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Zadanie</title>
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+				display: flex;
+				flex-wrap: wrap;
+				width: 100vw;
+				height: 100vh;
+				
+			}
+			
+			header{
+				width: 100%;
+				height: 15%;
+				background-color: green;
+				text-align: center;
+				color: white;
+			}
+			#left{
+				width: 20%;
+				height: 75%;
+				background-color: green;
+				text-align: center;
+				color: white;
+			}
+			
+			#center{
+				width: 60%;
+				height: 75%;
+				background-color: darkorange;
+				display:flex;
+				flex-direction: column;
+				align-items: center;
+				
+				color: white;
+			}
+			#right{
+				width: 20%;
+				height: 75%;
+				background-color: green;
+				display: flex;
+				justify-content: center;
+				align-items: baseline;
+				
+			}
+			footer{
+				width: 100%;
+				height: 10%;
+				background-color: green;
+				text-align: center;
+				color: white;
+			}
+			
+			#gal>img{
+				height: 200px;
+				width: auto;
+				border-radius: 300px;
+				margin-right: 10px;
+				margin-left: 10px;
+			}
+			
+			#right>img{
+				width: 95%;
+				height: auto;
+			}
+		
+			#center>p{
+				font-size: 30px;
+			}
+			
+			h3{
+				font-size: 50px;
+			}
+			
+			h1{
+				font-size: 60px;
+			}
+			
+			a{
+				font-size: 30px;
+				color: white;
+			}
+		</style>
+	</head>
+	<body lang="pl">
+		<header>
+			<h3>Paryż sklep</h3>
+		</header>
+		<div id="left">
+			<h1>Paryż</h1>
+			<a href="#">galeria</a>
+			<br>
+			<br>
+			<a href="#">Zamównienie</a>
+		</div>
+		<div id="center">
+			<div id="gal">
+				<img id="i1" src="1.jpg">
+				<img id="i2" src="2.jpg">
+				<img id="i3" src="3.jpg">
+			</div>
+			<p id="t1">Wybrałeś wieżę 1</p>
+			<p id="t2">cena 123zł</p>
+		
+		</div>
+		<div id="right">
+			<img id="gif1" src="1.jpg">
+		
+		</div>
+		<footer>
+			<p>stronę opracował: 00000000000</p>
+		</footer>
+		
+		<script>
+			i1.addEventListener("mouseover", function(){
+			t1.innerHTML = "Wybrałeś wieżę 1";
+			t2.innerHTML = "Cena: 123zł";
+			})
+			i2.addEventListener("mouseover", function(){
+			t1.innerHTML = "Wybrałeś wieżę 2";
+			t2.innerHTML = "Cena: 456zł";
+			})
+			i3.addEventListener("mouseover", function(){
+			t1.innerHTML = "Wybrałeś wieżę 3";
+			t2.innerHTML = "Cena: 789zł";
+			})
+			
+			
+			i1.addEventListener("click", function(){
+				gif1.setAttribute("src","gif1.gif");
+			})
+			
+			i2.addEventListener("click", function(){
+				gif1.setAttribute("src","gif1.gif");
+			})
+			
+			i3.addEventListener("click", function(){
+				gif1.setAttribute("src","gif1.gif");
+			})
+		
+		</script>
+	</body>
+	
+</html>
