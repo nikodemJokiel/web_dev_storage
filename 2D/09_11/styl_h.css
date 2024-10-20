@@ -1,0 +1,49 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header{
+    height: 10vh;
+    width: 100vw;
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    height: 70vh;
+    width: 25vw;
+    background-color: gray;
+}
+
+article{
+    height: 70vh;
+    width: 75vw;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#wynik{
+    margin-left: 20px;
+}
+
+footer{
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    background-color: lightblue;
+    justify-content: flex-end;
+    
+}
+table,tr,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}

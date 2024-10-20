@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>z3</title>
+    </head>
+    <body>
+        <p id="im"></p>
+        <p id="wi"></p>
+        <p id="wz"></p>
+        <p id="wa"></p>
+        <script>
+        
+        let Imie = prompt("podaj imię i nazwisko: ");
+        let wiek = prompt("podaj wiek: ");
+        let wzrost = prompt("podaj wzrost: ");
+        let waga = prompt("podaj wagę: ");
+
+        document.getElementById("im").innerHTML = Imie;
+        document.getElementById("wi").innerHTML = "wiek: " + Number(wiek);
+        document.getElementById("wz").innerHTML = "wzrost: " + Number(wzrost)
+        document.getElementById("wa").innerHTML = "waga: " + Number(waga);
+        </script>
+    </body>
+</html>

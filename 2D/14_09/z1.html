@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>z1</title>
+    </head>
+    <body>
+        <p>Podawanie liczb</p>
+        <script>
+            let liczba = prompt("podaj liczbe");
+            
+        /*
+            if(liczba==1){
+                document.write("wpisałeś dobrą liczbę")
+
+            }
+            else{
+                document.write("zła liczba")
+            }
+        */
+            //(liczba == "hasło") ? document.write("podałeś ok hasło") : document.write("podałeś złą liczbę");
+
+            switch(liczba){
+                case '1': 
+                    document.write("podałeś cyfrę 1");
+                    break;
+                case '2': 
+                    document.write("podałeś cyfrę 2");
+                    break;
+                case '3': 
+                    document.write("podałeś cyfrę 3");
+                    break;
+                default:
+                    document.write("podałeś cyfrę której nie znam");
+
+                
+            }
+        </script>
+    </body>
+</html>

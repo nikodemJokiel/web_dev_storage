@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>z4</title>
+    </head>
+    <body>
+        <p id="tekst"></p>
+        
+       
+        <script> 
+        
+        
+        let boka = prompt("podaj bok a: ");
+        let bokb = prompt("podaj bok b: ");
+       Number(boka)
+       Number(bokb)
+
+        document.getElementById("tekst").innerHTML = "<p> bok a: " + Number(boka) + "</p>"+
+                                                    " <p> bok b:  " + Number(bokb) + "</p>"+
+                                                    " <p> Obwód: " + 2*(Number(boka) + Number(bokb)) + "cm" +"</p>"+
+                                                    " <p> Pole: " + Number(boka)*Number(bokb) + "cm^2" + "</p>";
+        </script>
+    </body>
+</html>

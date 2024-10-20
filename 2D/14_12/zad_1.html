@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>zad1</title>
+    <link rel="stylesheet" href="zad1.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h2>Portal społecznościowy</h2>
+        
+    </header>
+  
+    <article>
+        <h2>Moje zainteresowania</h2>
+        <ul>
+            <li>muzyka</li>
+            <li>film</li>
+            <li>komputery</li>
+        </ul>
+        <h2>Moi znjaomi</h2>
+    </article>
+    <div id="form1">
+            <h3>Dodaj osobę</h3>
+            <div id="form2">
+                <input id="name2" type="text" value="Imię i nazwisko">
+                <input id="des" type="text" value="opis">
+                <input id="m" value="male" type="radio" name="gender">
+                <label for="m">Mężczyzna</label>
+                <input id="f" value="female" type="radio" name="gender">
+                <label for="f">Kobieta</label>
+                <input id="addperson" type="button" value="Dodaj">
+                <input id="exitt" type="button" value="anuluj">
+                
+                
+            </div>
+                
+            
+        </div>
+    <section id="sect">
+        <div>
+            
+            <img src="avatar2.jpg" alt="awatar">
+            <div>
+                 <h2>Monika Kowalska</h2>
+                <p>Ostatni wpis: z chęcią ciebie poznam</p>
+            </div>
+           
+            
+        </div>
+        <div>
+            
+            <img src="avatar1.jpg" alt="awatar">
+            <div>
+                <h2>Grzegorz Konieczny</h2>
+                <p>Ostatni wpis: Pozdrawiam z rodzinką</p>
+            </div>
+            
+            
+        </div>
+        
+    </section>
+    <nav>
+        
+        <button id="btn">Dodaj osobę
+        </button>
+        <button id="btn_del">Usuń osobę
+        </button>
+    </nav>   
+    
+    
+    <footer>
+        <p>stronę wykonał</p>
+        <a href="mailto:uigfyhughg@gmail.com">napisz do mnie</a>
+    </footer>
+    
+    
+    <script>
+       var akapity = document.querySelectorAll("div>p");
+        var div_count = 2;
+       
+        
+        var body_width = 100;
+        var section_width = 50;
+        addperson.addEventListener("click", addP);
+        
+        function addP(){
+            let person = document.createElement("div");
+            let picture = document.createElement("img");
+            let personD = document.createElement("div");
+            let n = document.createElement("h2");
+            let d = document.createElement("p");
+            
+            if(div_count>=2){
+            body_width+=25;
+            section_width+=25;
+            document.body.style.height = body_width+"vh";
+            sect.style.height = section_width+"vh";
+            }
+            div_count +=1;
+            
+            let genders = document.getElementsByName("gender");
+            if(genders[0].checked){
+                picture.setAttribute("src", "avatar1.jpg");
+            } 
+            else{
+                picture.setAttribute("src", "avatar2.jpg");
+            }
+            
+            
+            person.append(picture);
+            person.append(personD);
+            personD.append(n);
+            n.innerHTML= name2.value;
+            personD.append(d);
+            d.innerHTML= des.value;
+            
+            akapity = document.querySelectorAll("div>p");
+            sect.append(person);
+            
+            form1.style.display = "none"
+            akapity = document.querySelectorAll("div>p");
+            
+            for(x of akapity){
+           
+           x.addEventListener("mouseover", function(){this.style.opacity = 1});
+           x.addEventListener("mouseout", function(){this.style.opacity = 0.1});
+           }
+            
+            
+        }
+        
+       
+       for(x of akapity){
+           
+           x.addEventListener("mouseover", function(){this.style.opacity = 1});
+           x.addEventListener("mouseout", function(){this.style.opacity = 0.1});
+       }
+       
+       btn.addEventListener("click", function(){form1.style.display = "block"});
+        
+        exitt.addEventListener("click", function(){form1.style.display = "none"});
+        
+        btn_del.addEventListener("click", function(){
+            let to_delete = document.querySelector("section>div:last-of-type");
+            sect.removeChild(to_delete);
+            if(body_width>100&&section_width
+              >50){
+                body_width-=25;
+            section_width-=25;
+            document.body.style.height = body_width+"vh";
+            sect.style.height = section_width+"vh";
+                
+            }
+            div_count-=1;
+            
+        })
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Slownik</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;;
+            height: 100vh;
+
+        }
+
+        main{
+            width: 70%;
+            height: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightskyblue;
+            flex-direction: column;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+        section{
+            width: 80%;
+            height: 45%;
+            margin-top: 10%;
+            border: 2px solid black;
+            border-radius: 20px;
+            background-color: cornflowerblue;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+        img{
+            width: 45%;
+            height: 90%;
+        }
+        p{
+            margin-left:15%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Slownik</h1>
+        <input type="text" id="word">
+        <section>
+            <p id="translation"></p>
+            <img src="" alt="zdj" id="photo">
+        </section>
+    </main>
+    <script>
+        const words = new Array("jabłko", "cytryna", "truskawka", "arbuz");
+        const translations = new Array("apple", "lemon", "strawberry", "watermelon");
+        $("#photo").hide();
+        word.addEventListener("blur", function(){
+            $("#photo, #translation").hide(800,function(){
+
+                let w = word.value;
+                for(i in words){
+                if(w == words[i]){
+                    translation.innerText = translations[i];
+                    //console.log(translations[i]);
+                    photo.setAttribute("src", i+".png");
+                    $("#translation, #photo").show(800);
+                    //$("#photo").fadeIn();
+                    
+
+                    return;
+                }
+                
+            }
+            translation.innerText = "Nie znaleziono słowa";
+            $("#translation").show(800);
+            
+        })
+            });
+            
+            //$("#photo").hide(400);
+            
+    </script>
+</body>
+</html>

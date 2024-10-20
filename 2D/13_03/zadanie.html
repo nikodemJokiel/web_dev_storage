@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <!--
+    Przygotuj szablon w oparciu o grid, zawartość rozłóż zawartość bloków flexpoxem. 
+    Zastosuj motyw kolor monochromatyczny.
+    Dla listy zastosuj list-style-position: insite
+    Skrypt:
+        Po wybraniu z listy wyboru stylu życia wyświetla się proponowana lista zwierząt-->
+    <title>Drapieżniki</title>
+    <link rel="stylesheet" href="styl.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Drapieżniki i inne</h1>
+    </header>
+    <nav>
+        <h3 id="h3nav">Wybierz styl życia</h3>
+        <form>
+        <select>
+            <option id="s1" value="drap">Drapieżniki</option>
+            <option id="s2" value="rosl">Roślinożerne</option>
+            <option id="s3" value="padl">Padlinożerne</option>
+            <option id="s4" value="wszy">Wszystkożerne</option>
+        </select>
+        <input type="button" value="wybierz" id="btn">
+        </form>
+    </nav>
+    <aside>
+        <h3>Lista zwierząt</h3>
+        <ul >
+            <li>Sum pospolity -> drapieżnik</li>
+            <li>Jesior zachodni -> drapieżnik</li>
+            <li>Puszczyk zwyczanjny -> drapieżnik</li>
+            <li>Wilk szary -> drapieżnik</li>
+            <li>Diengo australijski -> drapieżnik</li>
+            <li>Sarna europejska -> drapieżnik</li>
+            <li>Sarna europejska -> roślinożerny</li>
+            <li>Hiena brunatna -> padlinożerny</li>
+            <li>Wrona siwa -> wszystkożerny</li>
+            <li>Sroka zwyczajna -> wszystkożerny</li>
+
+        </ul>
+    </aside>
+    <article>
+        <h3 id="tag">Wszystkożerne</h3>
+        <ol id="animals">
+            <li>Wrona siwa, Europa</li>
+            <li>Sroka zwyczajna, Eurazja</li>
+        </ol>
+    </article>
+    <section>
+        <img src="fox-715588_1280.jpg" alt="wilk">
+    </section>
+    <footer>
+        <p id="foot"><a href="https://pl.wikipedia.org/wiki/Zwierzęta">Poczytaj o zwierzętach na Wikipedii</a>, autor strony: 00000000000</p>
+    </footer>
+</body>
+</html>

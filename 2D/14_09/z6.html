@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>z6</title>
+    </head>
+    <body>
+        <p id="wynik"></p>
+        <script>
+        let a = Number(prompt("Podaj liczbę do sprawdzenia"));
+        if(a == 0){
+            document.getElementById("wynik").innerHTML="<p>" + a + " nie jest ani parzysta ani nieparzysta </p>"
+        }
+        else if(a % 2 == 0){
+            document.getElementById("wynik").innerHTML="<p>" + a + " jest liczbą parzystą </p>";
+        }
+        else{
+            document.getElementById("wynik").innerHTML="<p>" + a + " jest liczbą nieparzystą </p>";
+        }
+        </script>
+    </body>
+</html>

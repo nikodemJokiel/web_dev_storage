@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>z8</title>
+    </head>
+    <body>
+        <p id="wynik"></p>
+        <script>
+        let a = Number(prompt("Podaj a"));
+        let b = Number(prompt("Podaj b"));
+        let c = Number(prompt("Podaj c"));
+        
+        if(a<b){
+            x=a;
+            b=a;
+            b=x;
+            
+        }
+        else if(a<c){
+            x=c;
+            c=a;
+            a=x; 
+        }
+        else {
+            x=c;
+            a=c;
+            x=a;
+        }
+        document.getElementById("wynik").innerHTML = "<p>" + a + c + b + "</p>";
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>zadanie</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <select id="widoki">
+            <option value="1.jpg">zdjęcie 1</option>
+            <option value="2.jpg">zdjęcie 2</option>
+            <option value="3.jpg">zdjęcie 3</option>
+        </select>
+        <script>
+            let obraz = document.createElement("img");
+            document.body.append(obraz);
+            $("img").fadeOut();
+            widoki.onchange = () => {
+                //document.querySelector("img").src = widoki.value;
+                $("img").fadeOut().attr("src", widoki.value).delay(300);//.delay(3000);
+                //document.querySelector("img").delay(300).setAttribute("src", widoki.value);
+                //$("img").attr("src", widoki.value).delay(3000);
+                
+
+                $("img").fadeIn();
+                
+                
+            }
+        </script>
+    </body>
+</html>

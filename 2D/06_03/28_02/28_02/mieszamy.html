@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>mieszamy</title>
+    <link rel="stylesheet" href="styl_1.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h2>Malowanie pokoi i biur</h2>
+
+    </header>
+    <nav>
+        <h3>Menu</h3>
+        <ul>
+            <li>
+                <a href="#">Mieszamy</a>
+            </li>
+            <li>
+                <a href="wyceniamy.html">Wyceniamy</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h3>Barwy i ich pochodne</h3>   
+        <table id="tab">
+            <tr>
+                <th colspan="2">Składowe</th>
+                <th>wynik</th>
+            </tr>
+            <tr>
+                <td>żółty</td>
+                <td>czerwony</td>
+                <td>pomarańczowy</td>
+            </tr>
+            <tr>
+                <td>czerwony</td>
+                <td>niebieski</td>
+                <td>fioletowy</td>
+            </tr>
+            
+        </table>
+        
+        <label for="c1">Podaj pierwszy kolor</label>
+        <input type="color" id="c1">
+        
+        <label for="c1">Podaj drugi kolor</label>
+        <input type="color" id="c2">
+        
+        <input type="button" id="mix" value="mieszaj">
+    </main>
+    <aside>
+        <img src="obraz_1.png" alt="abstrakcja">
+    </aside>
+    <footer>
+        <h4>Malarz</h4>
+        <p>wykonano przez: 00000000000</p>
+    </footer>
+    <script>
+    mix.addEventListener("click", function(){
+        let row = document.createElement("tr");
+        let col1 = document.createElement("td");
+        let col2 = document.createElement("td");
+        let col3 = document.createElement("td");
+        
+        let w1 = String(c1.value);
+        let w1_tab = w1.split("");
+        let w2 = String(c2.value);
+        let w2_tab = w2.split("");
+       
+        
+        //let color1 = String(c1.value);
+        w1_tab.shift();
+        w2_tab.shift();
+        //console.log(w1_tab);
+        
+        //let p1 = parseInt(, 16);
+        //console.log(p1);
+        w1_tab = String(w1_tab).replaceAll(",","");
+        w1_tab = String(w1_tab).replaceAll(",","");
+        console.log(w1_tab)
+        
+        let w3 = (parseInt(w1_tab,16)+parseInt(w2_tab,16))/2;
+        console.log(w3);
+        row.append(col1);
+        row.append(col2);
+        row.append(col3);
+        
+        document.querySelector("tbody").append(row);
+        
+    })
+        
+    
+    </script>
+</body>
+</html>

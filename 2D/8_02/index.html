@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Slider zdjęć</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script defer src="main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Slider</h1>
+                <article id="zegar"></article>
+            </header>
+            <main>
+                <img src="./images/boy.jpg" alt="obraz" id="image">
+            </main>
+            <footer>
+                <ul id="ul">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </footer>
+        </div>
+        <script>
+            let clock = document.querySelector('#zegar');
+            let interval = setInterval(function () {
+                let data = new Date();
+                let godzina = data.getHours().toString().padStart(2, "0");
+                let minuta = data.getMinutes().toString().padStart(2, "0");
+                let sekunda = data.getSeconds().toString().padStart(2, "0");
+
+                clock.innerText = `${godzina} : ${minuta} : ${sekunda}`;
+            }, 1000);
+
+            
+        </script>
+    </body>
+</html>
