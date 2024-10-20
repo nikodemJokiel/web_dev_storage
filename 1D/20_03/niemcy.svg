@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="80mm"
+   height="50mm"
+   viewBox="0 0 80 50"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="polska.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     showguides="true">
+    <sodipodi:guide
+       position="40.489353,33.331249"
+       orientation="0,1"
+       id="guide357"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="41.15676,16.6625"
+       orientation="0,1"
+       id="guide1076"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ff0000;stroke-width:2.5374;stroke-linecap:square"
+       id="rect1078"
+       width="80.088829"
+       height="17.797518"
+       x="0.11123449"
+       y="16.462704" />
+    <rect
+       style="fill:#d4aa00;stroke-width:2.50685;stroke-linecap:square"
+       id="rect1132"
+       width="80.311302"
+       height="16.796408"
+       x="0.11123449"
+       y="33.481579" />
+    <rect
+       style="fill:#000000;stroke-width:2.465;stroke-linecap:square"
+       id="rect1238"
+       width="80.200058"
+       height="16.796408"
+       x="-0.11123449"
+       y="0.11123449" />
+  </g>
+</svg>

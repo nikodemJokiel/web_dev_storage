@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    width: 100vw;
+    height: 750px;
+ 
+}
+
+nav{
+    grid-area: 1/1/2/3;
+    height: 50px;
+    width: 100%;
+    background-color: #341661;
+}
+
+header{
+    grid-area: 2/1/3/3;
+    height: 200px;
+    width: 100%;
+    background-color: #A57AE6;
+}
+
+
+main{
+    grid-area: 3/1/4/2;
+    height: 350px;
+    
+    background-color: #463361;
+}
+
+article{
+    grid-area: 4/1/5/2;
+    height: 150px;
+    background-color: #5D28AD;
+}
+
+section{
+    grid-area: 3/2/4/2;
+    height: 150px;
+    background-color: #5D28AD;
+}
+
+footer{
+    grid-area: 4/1/5/2;
+    height: 350px;
+    background-color: #463361;
+}

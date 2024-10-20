@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="Utf8">
+        <title> Formularz </title>
+    </head>
+    <body>
+        <form name="zadanie">
+            <label for="imie"> Podaj imię</label>
+            <input type="text" id="imie" /><br>
+        
+            <label>
+                Podaj klasę:
+                <input type="radio" name="klasa" value="id"/>1d
+                <input type="radio" name="klasa" value="id"/>1c
+                <input type="radio" name="klasa" value="id"/>1b
+            </label>
+            <label>
+                Jakie masz zainteresowania?
+                <input type="checkbox" name="zain" value="książka"/>książka
+                <input type="checkbox" name="zain" value="film"/>film
+                <input type="checkbox" name="zain" value="brak"/>brak
+                <input type="checkbox" name="zain" value="taniec"/>taniec
+            </label>
+            <br>
+            <label for="lata">Ile masz lat?  </label>
+            <input type="number" placeholder="podaj wartość liczbą" id="lata"/>
+            <br>
+            <input type="password" placeholder="podaj hasło"/>
+            <br>
+            <label for="kolor">Wybierz kolor</label>
+            <input type="color" id="kolor"/>
+            <br>
+            <input type="date" placeholder="podaj date"/>
+            <br>
+            <input type="email" placeholder="podaj swój email"/>
+            <br>
+            <label for="język">wybierz język</label>
+            <select id="język">
+                <option value="ang">angielski</option>
+                <option value="niemiecki">niemiecki</option>
+                <option value="francuski">francuski</option>
+            </select>
+        </form>
+    
+    <! dla chetnych popatrzeć na parametry dla input>
+    
+    </body>
+</html>

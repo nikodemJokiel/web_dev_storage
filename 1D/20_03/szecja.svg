@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="80mm"
+   height="50mm"
+   viewBox="0 0 80 50"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="szecja.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     showguides="true">
+    <sodipodi:guide
+       position="40.266884,26.1875"
+       orientation="0,1"
+       id="guide357"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="39.599477,21.301502"
+       orientation="0,1"
+       id="guide1076"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="23.248007,63.459373"
+       orientation="0,-1"
+       id="guide1273"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="23.248008,24.97224"
+       orientation="1,0"
+       id="guide1275"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="28.476029,24.638536"
+       orientation="1,0"
+       id="guide1277"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#0051f2;fill-opacity:1;stroke-width:2.40294;stroke-linecap:square"
+       id="rect1469"
+       width="79.977592"
+       height="49.944279"
+       x="0.11123449"
+       y="0.11123449" />
+    <rect
+       style="fill:#ffcc00;stroke-width:3.20776;stroke-linecap:square"
+       id="rect1575"
+       width="80.978714"
+       height="8.2313519"
+       x="-0.33370346"
+       y="21.357021" />
+    <rect
+       style="fill:#ffcc00;stroke-width:2.465;stroke-linecap:square"
+       id="rect1577"
+       width="0.22246897"
+       height="0.44493794"
+       x="40.266884"
+       y="23.248007" />
+    <rect
+       style="fill:#ffcc00;stroke-width:3.32295;stroke-linecap:square"
+       id="rect1579"
+       width="80.424995"
+       height="8.8938904"
+       x="-27.902075"
+       y="-30.583158"
+       transform="matrix(0.00936043,0.99995619,-0.99999598,0.00283469,0,0)" />
+  </g>
+</svg>

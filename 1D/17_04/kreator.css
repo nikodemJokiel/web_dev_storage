@@ -1,0 +1,87 @@
+body{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: linen;
+    color: #222;
+    width: 90%;
+    margin: auto;
+    font-family: "Halvetica", sans-serif;
+    padding: auto;
+}
+
+@font-face{
+    font-family:czcionka;
+    src:url('SofiaSansCondensed-VariableFont_wght.ttf')
+}
+
+h1{
+    font-family: czcionka;
+    font-size: 50px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+}
+
+h1,nav{
+    background-color: black;
+    color: white;
+    height: 100px;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+section{
+    padding: 20px;
+    width: 100%
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+table{
+    margin: 40px;
+    border-collapse: collapse;
+    
+}
+
+td{
+    padding: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color:#aaa;
+    padding: 5px;
+    margin: 7px;
+    border-bottom: 1px solid white;
+}
+
+
+a:hover{
+    color:white;
+}
+
+
+
+
+

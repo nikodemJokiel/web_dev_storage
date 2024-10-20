@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>formularz 1</title>
+        <link rel="stylesheet" href="formularz.css"/>
+    </head>
+    <body>
+        <div>
+            <h3>Formularz:</h3>
+            <form name="pytania">
+                <label for="imie">Imię:</label>
+                <br>
+                <input type="text" id="imię"/>
+            
+                <br>
+                <label for="nazwisko">Nazwisko:</label>
+            
+                <br>
+                <input type="text" id="nazwisko"/>
+           
+                <br>
+                <label for="płeć">Płeć:</label>
+            
+                <br>
+                <input type="radio" name="płeć" value="id"/>kobieta
+           
+                <br>
+                <input type="radio" name="płeć" value="id"/>mężczyzna
+            
+                <br>
+                <label for="wiek" >Wiek:</label>
+            
+                <br>
+                <select id="lata" placeholder="0-18" >
+                    <option value="1">0-18</option>
+                    <option value="1">19+</option>
+                </select>
+                    
+                <br>
+                <label for="uwagi">Uwagi:</label>
+                <br>
+                <textarea id="uwagi" placeholder="wpisz uwagi"></textarea>
+                <br>
+            
+                <button>wyślij</button>
+        </form>
+        </div>
+    </body>
+</html>

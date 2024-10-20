@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Zadanie 1</title>
+        <style>
+            @media screen and (min-width: 600px){
+            .wrapper{
+                display: grid;
+                grid-template-areas: "a a a b"
+                                     "c c d d"
+                                     "e . . f" ;
+                grid-gap: 10px;
+                grid-auto-rows: minmax(100px, auto);
+            }
+            main{
+                width: 100vw;
+                height: 100vh;
+            }
+            .photo_1{
+                grid-area: a;
+                border: 2px solid black;
+                border-radius: 50px;
+                background-color: aliceblue;
+                z-index: 1;
+            }
+            .photo_2{
+                grid-area: b;
+                border: 2px solid black;
+                border-radius: 50px;
+                background-color: aqua;
+                z-index: 1;
+            }
+            .photo_3{
+                grid-area: c;
+                border: 2px solid black;
+                border-radius: 50px;
+                background-color: aquamarine;
+                z-index: 1;
+            }
+            .photo_4{
+                grid-area: d;
+                border: 2px solid black;
+                border-radius: 50px;
+                background-color: azure;
+                z-index: 1;
+            }
+            .photo_5{
+                grid-area: e;
+                border: 2px solid black;
+                border-radius: 50px;
+                background-color: beige;
+                z-index: 1;
+            }
+            .photo_6{
+                grid-area: f;
+                border: 2px solid black;
+                border-radius: 50px;
+                background-color: bisque;
+                z-index: 1;
+            }
+            img:hover{
+                border: 5px solid black;
+                border-radius: 0px;
+                box-shadow: 0px 0px 0px 15px #bbbbbb;
+                z-index: 0; /*Box-shadow się nie najeżdża*/
+            }
+        }
+            @media screen and (max-width: 600px){
+            .wrapper{
+                display: grid;
+                grid-template-areas: "a a" "b c" "d e" "f f";
+                grid-gap: 10px;
+                grid-auto-rows: minmax(100px, auto);
+            }
+            main{
+                width: 100vw;
+                height: 100vh;
+            }
+            .photo_1{
+                grid-area: a;
+                border: 2px solid black;
+                border-radius: 50px;
+                background-color: aliceblue;
+                z-index: 1;
+            }
+            .photo_2{
+                grid-area: b;
+                border: 2px solid black;
+                border-radius: 50px;
+                background-color: aqua;
+                z-index: 1;
+            }
+            .photo_3{
+                grid-area: c;
+                border: 2px solid black;
+                border-radius: 50px;
+                background-color: aquamarine;
+                z-index: 1;
+            }
+            .photo_4{
+                grid-area: d;
+                border: 2px solid black;
+                border-radius: 50px;
+                background-color: azure;
+                z-index: 1;
+            }
+            .photo_5{
+                grid-area: e;
+                border: 2px solid black;
+                border-radius: 50px;
+                background-color: beige;
+                z-index: 1;
+            }
+            .photo_6{
+                grid-area: f;
+                border: 2px solid black;
+                border-radius: 50px;
+                background-color: bisque;
+                z-index: 1;
+            }
+            img:hover{
+                border: 5px solid black;
+                border-radius: 0px;
+                box-shadow: 0px 0px 0px 15px #bbbbbb;
+                z-index: 0; /*Box-shadow się nie najeżdża*/
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="wrapper">
+                <img src="" class="photo_1"/>
+                <img src="" class="photo_2"/>
+                <img src="" class="photo_3"/>
+                <img src="" class="photo_4"/>
+                <img src="" class="photo_5"/>
+                <img src="" class="photo_6"/>
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+a:link      {color: red;}
+a:visited   {text-decoration: line-through;}
+a:hover     {background-color: cadetblue;
+            color: azure;}
+a:active    {font-weight: 800;}
+a:focus     {font-style: oblique;}
+
+table, tr, td   {width: 80%;
+                border: 2px solid grey;
+                border-collapse: collapse;}
+td  {width: 150px;}
+
+table tr:nth-last-of-type(2n+1):hover > td{background-color: dimgray;}
+table tr:nth-last-of-type(2n):hover > td{background-color: lightgray;}        
+

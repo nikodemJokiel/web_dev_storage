@@ -1,0 +1,73 @@
+main{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    
+}
+
+header{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    background-color: #1B569A;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    
+   
+    
+    
+}
+
+section{
+     width: 100vw;
+    height: 70vh;
+    display: flex;
+    background-color: #0D7BA6;
+    flex-flow: column;
+    align-items: flex-start;
+    color: white;
+    
+}
+
+footer{
+     width: 100vw;
+    height: 10vh;
+    display: flex;
+    background-color: #1B569A;
+    justify-content: flex-end;
+    
+}
+
+img{
+    height:20vh;
+}
+
+h2{
+    font-size: 50px;
+}
+
+.xd{
+    margin: 10px;
+    align-items: flex-start;
+    display: flex;
+    text-decoration: underline;
+    font-size: 30px;
+    
+}
+
+button{
+    width:60px;
+    height:30px;
+}
+
+nav{
+    display:flex;
+    justify-content: flex-end;
+    
+    color:white;
+    
+}
