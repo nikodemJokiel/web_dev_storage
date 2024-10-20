@@ -1,0 +1,115 @@
+body{
+    
+    width: 100vw;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #B9D7ED;
+
+}
+
+main{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #D1E5F5; 
+    border: solid 2px black;
+    border-radius: 100px;
+    margin: 30px
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+img{
+    width:70%;
+    height: auto;
+    border-radius: 50px;
+    transition: width 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+    
+}
+
+@font-face{
+    font-family:gora;
+    src:url("North Mountain.otf")
+}
+
+main>a:first-of-type{
+    text-transform: uppercase;
+    font-size: 130px;
+    font-family: gora;
+    margin:10px;
+}
+
+img:hover{
+    width:80%;
+    height: auto;
+    border-radius: 100px;
+}
+
+div{
+    width:70%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #D1E5F5;
+    
+}
+
+div>a{
+    width: 400px;
+    height: 50px;
+    background-color: #BAE0DC;
+    border-radius: 50px;
+    font-family: gora;
+    font-size: 35px;
+    border: solid 2px black;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out, background-color 0.3s ease-in-out, font-size 0.3s ease-in-out, border 0.3s ease-in-out;
+        
+}
+
+div>a:hover{
+    width: 500px;
+    height: 60px;
+    background-color: #C1F7E3;
+    border-radius: 50px;
+    font-family: gora;
+    font-size: 40px;
+    border: solid 3px black;
+    
+}
+
+p{
+    font-size: 25px;
+    width: 70%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #BAE0DC;
+    border: solid 2px black;
+    margin:20px
+}
+
+
+
+
+
+
+

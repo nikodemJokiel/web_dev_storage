@@ -1,0 +1,64 @@
+<!DPCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Formularz</title>
+        <link rel="stylesheet" type="text/css" href="zad2_14_11.css"/>
+    </head>
+    <body>
+        <main>
+            <form>
+                <label>Imię
+                    <input type="text"/>
+                </label>
+                <br>
+                <label>Nazwisko
+                    <input type="text"/>
+                </label>
+                <br>
+                <label >Wybierz płeć:
+                    Mężczyzna<input type="radio" name="plec"  value="male" checked/>
+                    Kobieta<input type="radio" name="plec"  value="female"/>
+                </label>
+                <br>
+                <label>Stan cywilny
+                    <select>
+                        <option value="wyb">--wybierz--</option>
+                        <option value="kawaler">Kawaler</option>
+                        <option value="mezatka">Mężatka</option>
+                        <option value="panna">Panna</option>
+                        <option value="roz">Rozwiedziona(ny)</option>
+                        <option value="wdowa">Wdowa/Wdowiec</option>
+                        <option value="zonaty">Żonaty</option>
+                    </select>
+                </label>
+                <br>
+                <label>Liczba dzieci
+                    <input type="number" min="0"/>
+                </label>
+                <br>
+                <label id="l1">Zainteresowania:
+                    <br>
+                    <input type="checkbox" value="zain" name="inf"/>Informatyka
+                    <br>
+                    <input type="checkbox" value="zain" name="mot"/>Motoryzacja
+                    <br>
+                    <input type="checkbox" value="zain" name="rys"/>Rysunek
+                    <br>
+                    <input type="checkbox" value="zain" name="fil"/>Film
+                    <br>
+                    <input type="checkbox" value="zain" name="mod" />Moda
+                </label>
+                <br><br>
+                <label id="l2">Dodatkowe informacje
+                    <br>
+                    <input type="checkbox" checked/>Pokaż/ukryj
+                    <br>
+                    <textarea placeholder="Dodatkowe informacje"></textarea>
+                </label>
+                <br><br>
+                <button type="submit">Podsumuj</button>
+            </form>
+        </main>
+    </body>
+</html>

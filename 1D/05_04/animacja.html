@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8"/>
+        <title>animacja1</title>
+        <style>
+            body{
+                display: flex;
+                
+                
+            }
+            
+            
+            
+            @keyframes animacja{
+                0%{
+                    opacity: 0;
+                    filter: blur(4px);
+                    position: relative;
+                    margin-right: 100vw;
+                    
+                }
+                33%{
+                    opacity: 1;
+                    filter: blur(0px);
+                    position: relative;
+                    margin-right:50vw
+                        
+                }
+                66%{
+                    opacity: 1;
+                    filter: blur(0px);
+                    position: relative;
+                    margin-left:40vw 
+                }
+                100%{
+                    opacity: 0;
+                    filter: blur(4px);
+                    position: relative;
+                    margin-left:100vw 
+                }
+            }
+            h1{
+                color: red;
+                font-size: 50px;
+                animation: animacja 4s infinite 0s ease-in-out;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <h1>ANIMACJA</h1>
+    </body>
+</html>

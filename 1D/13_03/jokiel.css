@@ -1,0 +1,121 @@
+
+body{
+    font-family: Verdana;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    height: 870px;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height:500px;
+    
+    
+}
+header{
+    background-color: rgb(205,92,92);
+    color: white;
+    width:100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+footer{
+    background-color: rgb(205,92,92);
+    color: white;
+    width:100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+nav{
+    background-color: rgb(250,235,215);
+    width: 25%;
+    height: 500px;
+}
+div{
+   background-color: rgb(250,235,215);
+    width: 50%;
+    height: 500px;
+}
+
+section{
+    background-color: rgb(250,235,215);
+    width: 25%;
+    height: 500px;
+}
+
+article{
+    background-color: rgb(210,180,140);
+    color: white;
+    width:100%;
+    height: 200px; 
+}
+
+h2{
+    display:flex;
+    justify-content: center; 
+    margin:0;
+    padding: 0;
+}
+
+h2::first-letter {
+    font-size: 150%    
+}
+
+img{
+    height: 100px;
+    padding:7px;
+    width:170px;
+}
+
+#xd{
+    display: grid;
+    grid-template-areas:"a b c"
+                        "d e f"
+                        "g h i";
+    height:400px;
+}
+
+#a{
+    grid-area: a;
+}
+#b{
+    grid-area: b;
+}
+#c{
+    grid-area: c;
+}
+#d{
+    grid-area: d;
+}
+#e{
+    grid-area: e;
+}
+#f{
+    grid-area: f;
+}
+#g{
+    grid-area: g;
+}
+#h{
+    grid-area: h;
+}
+#i{
+    grid-area: i;
+}
+
+img:hover{
+    background-color: rgb(210,180,140);
+    
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Grid5</title>
+        <style>
+            .grid-container{
+                display: grid;
+                height: 100vh;
+                grid-column-gap: 5px;
+                grid-row-gap: 5px;
+                grid-template-columns: 1fr 5fr 2fr;
+                grid-template-rows: 1.5fr 2fr 1fr;
+                grid-template-areas: "h h h"
+                                     "l m r"
+                                     "f f f"            
+            }
+            
+            
+            header{
+                grid-area: h;
+                 background-color: lightblue;
+                display:flex;
+                justify-content: center;
+                align-items: center
+                
+            }
+            
+            .left{
+                grid-area: l;
+                background-color: darkblue;
+            }
+            .middle{
+                grid-area: m;
+                background-color: lightyellow;
+            }
+            .right{
+                grid-area: r;
+                background-color: gray;
+            }
+            footer{
+                grid-area: f;
+                background-color: lightblue;
+                display:flex;
+                justify-content: center;
+                align-items: center
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+        <div class="grid-container">
+            <header>
+                <h2>nagłówek</h2>
+            </header>
+            <div class="left">Zawartość</div>
+            <div class="middle">Zawartość</div>
+            <div class="right">Zawartość</div>
+            <footer>
+                <p>stopka</p>
+            </footer>
+        </div>
+        
+    </body>
+</html>

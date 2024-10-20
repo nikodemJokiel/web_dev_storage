@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Zadania powtórkowe</title>
+    <link rel="stylesheet" type="text/css" href="globalStyle.css" />
+    <script>
+        function showContent() {
+            var temp = document.getElementById("template");
+            var clon = temp.content.cloneNode(true);
+            document.body.appendChild(clon);
+        }
+    </script>
+</head>
+
+<body>
+    <article>
+        <p>Zdanie<mark> wyróżnione</mark></p>
+
+        <time datetime="2008-02-14 12:00">spotkanie</time>
+        <time>12:00</time>
+    </article>
+
+    <details>
+        <summary>Nikoseilbahnen </summary>
+        <p>Gondelbahnen und Pendelbahnen</p>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </details>
+    <p>
+        <dfn id="html-def">HTML</dfn> hipertekstowy język zanczników
+    </p>
+
+    <p>Zapmiętaj
+        <a href="#html-def">HTML</a>
+    </p>
+
+    <figure style="display: flex">
+        <img src="obrona_cywilna.png" alt="obrona cywilna" style="width:20%" />
+        <figcaption>Zdj.1</figcaption>
+    </figure>
+    <!--fidżyr-->
+
+    <template id="template">
+        <h2>Kwiaty</h2>
+        <img src=" obrona_cywilna.png " width="214 " height="204 " alt="kwiaty"/>
+    </template>
+
+    <button onclick="showContent.js">
+        pokaż
+    </button>
+    <p>UWAGA <s>koniec promocji</s></p>
+</body>
+
+</html>

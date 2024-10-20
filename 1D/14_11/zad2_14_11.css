@@ -1,0 +1,21 @@
+main{
+    width: 280px;
+    background-color: darkblue;
+    color: white;
+    line-height: 3;
+}
+
+form{margin: 5px
+}
+
+#l1{
+    line-height: 1;
+}
+
+#l2{
+    line-height: 1; 
+}
+
+button{
+    margin-bottom: 5px; 
+}

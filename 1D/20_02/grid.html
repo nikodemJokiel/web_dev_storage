@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Grid1</title>
+        <style>
+            .container{
+                display: grid;
+                
+            }
+            .red{
+                grid-row-start: 1;
+                grid-row-end: 3;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                background-color: red
+            }
+            .blue{
+                grid-row-start: 1;
+                grid-row-end: 2;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                background-color: blue;
+            }
+            .yellow{
+                grid-row-start: 2;
+                grid-row-end: 3;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                background-color: yellow
+            }
+            .green{
+                grid-row-start: 1;
+                grid-row-end: 3;
+                grid-column-start: 3;
+                grid-column-end: 4;
+                background-color: green
+            }
+        
+        </style>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="red">
+                <p>red</p>
+            </div>
+            <div class="blue">
+                <p>blue</p>
+            </div>
+            <div class="yellow">
+                <p>yellow</p>
+            </div>
+            <div class="green">
+                <p>green</p>
+            </div>
+        </div>
+        
+    </body>
+</html>

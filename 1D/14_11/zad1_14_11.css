@@ -1,0 +1,39 @@
+#pojemnik{
+    width: 800px;
+    background-color: rgb(174,206,121);
+    margin: 0 auto;
+    
+        
+}
+
+#naglowek{
+    background-image: url(a-drop-of-water-gc8f037215_1920.jpg);
+    background-size:cover;
+    width: 800px;
+    height: 350px;
+    border-bottom: 2px solid black;
+    
+    
+}
+
+div{
+    background-color: rgb(255,255,255,0.3);
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 250px;
+
+}
+
+h1{
+    margin: 10px;
+    text-transform: uppercase;
+    
+}
+
+
+#tresc{
+    padding: 60px;
+    font-family: Georgia, serif;
+    line-height: 3;
+}

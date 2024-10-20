@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body>div{
+                width: 200px;
+                height: 50px;
+                background-color: black;
+                border: 5px solid black;
+                
+            }
+            div>div {width: 200px;
+                height: 50px;
+                border: 1px solid black;
+                position: relative; 
+                background-color: black;
+                animation: pasek 5s ease-in-out 1s infinite normal
+            }
+            @keyframes pasek{
+                from{
+                    width: 0px;
+                        background-color: darkgreen
+                }
+                to{
+                    width: 200px;
+                    background-color: yellowgreen;
+                }
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div>
+            </div>
+        </div>
+    </body>
+</html>

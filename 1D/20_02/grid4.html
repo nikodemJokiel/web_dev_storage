@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Grid4</title>
+        <style>
+            .grid-container{
+                display: grid;
+                height: 100vh;
+                grid-column-gap: 5px;
+                grid-row-gap: 5px;
+                grid-template-columns: 1fr 5fr 2fr;
+                grid-template-rows: 1.5fr 2fr 1fr;
+            }
+            
+            header{
+                grid-area: 1/1/2/4;
+                 background-color: lightblue;
+                display:flex;
+                justify-content: center;
+                align-items: center
+                
+            }
+            
+            .left{
+                grid-area: 2/1/3/2;
+                background-color: darkblue;
+            }
+            .middle{
+                grid-area: 2/2/3/3;
+                background-color: lightyellow;
+            }
+            .right{
+                grid-area: 2/3/3/4;
+                background-color: gray;
+            }
+            footer{
+                grid-area: 3/1/4/4;
+                background-color: lightblue;
+                display:flex;
+                justify-content: center;
+                align-items: center
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+        <div class="grid-container">
+            <header>
+                <h2>nagłówek</h2>
+            </header>
+            <div class="left">Zawartość</div>
+            <div class="middle">Zawartość</div>
+            <div class="right">Zawartość</div>
+            <footer>
+                <p>stopka</p>
+            </footer>
+        </div>
+        
+    </body>
+</html>
