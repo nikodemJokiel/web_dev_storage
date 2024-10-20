@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "font1";
+  src:url("CutiveMono-Regular.ttf");
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    
+}
+
+header{
+    width: 92%;
+    height: 10%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    
+    
+    
+}
+
+#up{
+    height: 20%;
+    width:92%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transition: 0.3s ease-in-out;
+    align-items: center;
+    
+    
+}
+article{
+    height: 100%;
+    width:72%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 13px lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    transition: 0.3s ease-in-out;
+    
+    
+    
+}
+nav{
+    height: 100%;
+    width: 26%;
+    
+    box-shadow: 0px 0px 13px lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.8rem;
+    transition: 0.3s ease-in-out;
+    
+
+   
+    
+}
+
+nav>p{
+    margin:1%;
+    margin-left: 15%;
+}
+nav>p:nth-of-type(1){
+    border-bottom: 1px solid lightgrey;
+    
+}
+
+main{
+    height: 50%;
+    width: 92%;
+    box-shadow: 0px 0px 13px lightgrey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 0.3s ease-in-out;
+    opacity:0;
+    
+    
+    
+}
+
+footer{
+    width: 92%;
+    height: 10%;
+    box-shadow: 0px 0px 13px lightgrey;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/*
+header, article, nav, main, footer{
+    margin: 1%;
+    border-radius: 10px;
+}
+*/
+#a_align{
+    width:90%;
+    height: 90%;
+    
+}
+h1,h3,p,input{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    
+}
+h3{
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    border-bottom: 1px solid lightgrey;
+    
+}
+#cv{
+    font-size: 1rem;
+    font-family: font1;
+    transition: 0.3s ease-in-out;
+}
+a{
+    width: 26%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid lightgrey;
+}
+
+#f{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: font1;
+    font-size: 1.4rem;
+}
+
+
+img{
+    width: 70%;
+    height: auto;
+    transition: 0.3s ease-in-out;
+}
+
+img:hover{
+    width: 75%;
+    height: auto;
+    
+      
+}
+#pas{
+    border:1px solid black;
+}
+#dat_d, #dat_h{
+    font-family: font1;
+}
+
+#password_box{
+    font-family: font1;
+}
+
+#password_box > input{
+    font-family: font1;
+}

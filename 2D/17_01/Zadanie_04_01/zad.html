@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="zad.css" type="text/css">
+    <title>CV</title>
+</head>
+<body>
+    <header>
+        <h1>CV</h1>
+        <div id="password_box">
+            <label for="pas">Podaj hasło: </label>
+            <input type="password" id="pas">
+            <input type="button" value="Zaloguj się" id="btn">
+            <input type="button" value="Wyloguj się" id="btn2">
+        </div>
+        
+    
+    </header>
+    <div id="up">
+        <article id="art">
+            <div id="a_align">
+                <h3>Moje CV:</h3>
+                <p id="cv">Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. Lorem Ipsum jest tekstem stosowanym.</p>
+            </div>
+        
+        </article>
+        <nav id="na">
+            <p>Dzisiaj jest:</p>
+            <p id="dat_d"></p>
+            <p id="dat_h"></p>
+        
+        </nav>
+    </div>
+    
+    <main id="ma" >
+        <a href="p1.html" target="_blank"><img src="p_1.png" alt="pierwszy projekt"></a>
+        <a href="p2.html" target="_blank"><img src="p_2.png" alt="drugi projekt"></a>
+        <a href="p3.html" target="_blank"><img src="p_3.png" alt="trzeci projekt"></a>
+        <a href="p4.html" target="_blank"><img src="p_4.png" alt="czwarty projekt"></a>
+        <a href="p5.html" target="_blank"><img src="p_5.png" alt="piaty projekt"></a>
+        <a href="p6.html" target="_blank"><img src="p_6.png" alt="szósty projekt"></a>
+        
+    
+    </main>
+    <footer>
+        <div id="f">
+            <p>oceń mój projekt:</p>
+            <select id="gr">
+                <option></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </div>
+        
+        <p id="gr_result">Otrzymałem ocenę: </p>
+    </footer>
+    <script>
+    var myTimer = setInterval(myTime,1000);
+        function myTime(){
+            let data = new Date();
+            let dzien = data.getDate();
+            let miesiac = data.getMonth();
+            
+            switch(miesiac){
+                case 0:
+                    miesiac = "stycznia";
+                    break;
+                case 1:
+                    miesiac = "lutego";
+                    break;
+                case 2:
+                    miesiac = "marca";
+                    break;
+                case 3:
+                    miesiac = "kwietnia";
+                    break;
+                case 4:
+                    miesiac = "maja";
+                    break;
+                case 5:
+                    miesiac = "czerwca";
+                    break;
+                case 6:
+                    miesiac = "lipca";
+                    break;
+                case 7:
+                    miesiac = "sierpnia";
+                    break;
+                case 8:
+                    miesiac = "września";
+                    break;
+                case 9:
+                    miesiac = "października";
+                    break;
+                case 10:
+                    miesiac = "listopada";
+                    break;
+                case 11:
+                    miesiac = "grudnia";
+                    break;
+                    
+                    
+            }
+            let rok = data.getFullYear();
+            
+            let godzina = data.getHours();
+            if (godzina < 10) { godzina = String("0" + godzina); }
+            
+           
+            let minuta = data.getMinutes();
+            if (minuta < 10) { minuta = String("0" + minuta); }
+            let sekunda = data.getSeconds();
+            if (sekunda < 10) { sekunda = String("0" + sekunda); }
+            
+            
+            let godzina_w = godzina+":"+minuta+":"+sekunda;
+            
+            dat_d.innerHTML = dzien+" "+miesiac+" "+rok;
+            dat_h.innerHTML= godzina_w;
+        }
+        
+        gr.addEventListener("click", function(){
+            let gr_ = Number(gr.value);
+            gr_result.innerHTML = "Otrzymałem ocenę: "+ gr_;
+            if(gr_>=1&&gr_<=2){
+                gr_result.style.color = "red";
+            }
+            else if(gr_>=3&&gr_<=4){
+                gr_result.style.color = "blue";
+            }
+            else if(gr_>=5&&gr_<=6){
+                gr_result.style.color = "green";
+                gr_result.style.fontWeight = "bold";
+            }
+        })
+        
+        up.addEventListener("mouseover", function(){
+            up.style.height = "30%";
+            art.style.width = "75%";
+            na.style.width = "23%";
+            ma.style.height = "40%";
+            cv.style.fontSize = "1.4rem";
+            
+            
+            
+        })
+        
+        up.addEventListener("mouseout", function(){
+            up.style.height = "20%";
+            art.style.width = "72%";
+            na.style.width = "26%";
+            ma.style.height = "50%";
+            cv.style.fontSize = "1rem";
+            
+            
+            
+        })
+        
+        let wzor = /^admin123$/;
+        btn.addEventListener("click", function(){
+            if(pas.value.match(wzor)){
+                ma.style.opacity = "1";
+                pas.style.border ="3px solid lightgreen";
+
+            }
+            else{
+                pas.style.border ="3px solid red";
+            }
+        })
+        
+        btn2.addEventListener("click", function(){
+            
+            ma.style.opacity = "0";
+            pas.value = "";
+            pas.style.border ="1px solid black";
+            
+        })
+    
+    </script>
+</body>
+</html>

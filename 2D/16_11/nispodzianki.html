@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>pudełka</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin:0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: lightblue;
+        }
+        input{
+            width:100px;
+            height: 25px;
+        }
+        h2{
+            width: 100%;
+            height: 5%;
+        }
+        #buttons{
+            width:100%;
+            height:10%;
+        }
+        #boxes{
+            width: 100%;
+            height: 40%;
+            background-color: darkblue;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        div{
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            background-color: blueviolet;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Pudełka niespodzianek</h2>
+    <nav id="buttons">
+        <input type="button" value="dodaj pudełko" id="btn1">
+        <input type="button" value="wstaw zawartosc" id="btn2">
+        <input type="button" value="usuń pudełko" id="btn3">
+    </nav>
+    
+    <main id="boxes"></main>
+    
+    <script>
+        btn1.addEventListener("click", addel);
+        function addel(){
+            let box = document.createElement("div");
+            boxes.append(box);
+            
+        }
+
+        btn2.addEventListener("click", addcap);
+        function addcap(){
+            let text = prompt("podaj tekst");
+            let img = prompt("podaj fote");
+            let p = document.createElement("p");
+            let i = document.createElement("img");
+            let t = document.querySelector("#boxes>div:last-of-type");
+            t.append(p);
+            t.append(img);
+
+
+
+        }
+
+        btn3.addEventListener("click", rem);
+        function rem(){
+            
+            document.querySelector("#boxes>div:last-of-type").remove();
+        }
+    </script>
+</body>
+</html>

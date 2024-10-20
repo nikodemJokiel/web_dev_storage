@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Wyrocznia Delficka</title>
+        <style>
+            h1,p{
+                width: 100%;
+            }
+            
+            body{
+                display:flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .green{
+                color: green;
+                font-size: 50px;
+            }
+            .red{
+                color: red;
+                font-size: 50px;
+            }
+            .blue{
+                color: blue;
+                font-size: 50px;
+            }
+            
+            img{
+                width: 80%;
+                height: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>To ja, przemożna Pytia – zadaj mi w myślach pytanie, a ja odpowiem czy to o czym pomyślałeś się spełni</h1>
+        <input type="text" id="inp">
+        <button id="btn">sprawdź</button>
+        
+        <p id="p1"></p>
+        
+        <img id="i" src="">
+        
+        <script>
+            
+            btn.addEventListener("click", function(){
+                let x = Math.floor(Math.random()*101);
+                if(x<=33){
+                    p1.innerHTML = "Prawdopodobieństwo, że tak będzie wynosi: " + x;
+                    p1.setAttribute("class", "red")
+                    i.setAttribute("src", "3.png")
+                }
+                else if(x<=66){
+                    p1.innerHTML = "Prawdopodobieństwo, że tak będzie wynosi: " + x;
+                    p1.setAttribute("class", "blue")
+                    i.setAttribute("src", "2.webp")
+                }
+                else{
+                    p1.innerHTML = "Prawdopodobieństwo, że tak będzie wynosi: " + x;
+                    p1.setAttribute("class", "green")
+                    i.setAttribute("src", "1.jpg")
+                }
+                
+            })
+        </script>
+    </body>
+</html>

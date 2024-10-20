@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>sprawdzanie</title>
+    </head>
+    <body>
+        <input type="text" id="inp" placeholder="podaj wyraz, który ma przynajmniej 6 liter i kończy się na kot ">
+        
+        <p id="p1"></p>
+        
+        <script>
+            
+            inp.addEventListener("blur", function(){
+                let r = /^\w{2,}kot$/
+                
+                
+                let w = inp.value;
+                
+                if (r.test(w)){
+                    p1.style.color = "green";
+                    p1.innerHTML = "wyraz" + w +"ma przynajmniej 6 liter i kończy się na kot";
+                    
+                }
+                else{
+                     p1.style.color = "red";
+                    p1.innerHTML = "wyraz " + w +" nie ma przynajmniej 6 liter lub nie kończy się na kot";
+                }
+                
+                
+            })
+        </script>
+    </body>
+</html>

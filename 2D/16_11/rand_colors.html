@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>rand colors</title>
+</head>
+<body>
+    <input type="button" onclick="kolorChange()" id="btn" value="Losuj kolor">
+    <p id="wynik"></p>
+    <script>
+        //let kolor = Math.floor(Math.random()*16);
+        //console.log(kolor.toString(16));
+
+        function kolorChange(){
+            let kolor = "#";
+            
+            
+            for(i=0;i<6;i++) {
+                
+                kolor += Math.floor(Math.random()*16).toString(16);
+
+            }
+            wynik.innerText = kolor.toUpperCase();
+            return kolor;
+        }
+        
+        document.body.onkeyup = function(e){
+            if(e.key == "Enter"){
+                
+                document.body.style.backgroundColor = wynik.innerText;
+            }
+        }
+    </script>
+
+
+</body>
+</html>

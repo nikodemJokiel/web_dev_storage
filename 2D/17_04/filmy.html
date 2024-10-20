@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Baza filmów</title>
+	<link rel="stylesheet" href="styl.css" type="text/css">
+</head>
+<body>
+    <header>
+        <img src="klaps.png" id="img1">
+        <h1>BAZA FILMÓW</h1>
+        <select name="filmy" id="filmy">
+            <option value="0" for="filmy">dramat</option>
+            <option value="1" for="filmy">fantazy</option>
+            <option value="2" for="filmy">science fiction</option>
+            <option value="3" for="filmy">komedie</option>
+            
+        </select>
+		<img src="gwiezdneWojny.jpg">
+		
+    </header>
+	<main>
+		<h4>wybrano filmy</h4>
+		
+	</main>
+	<aside>
+		<h4>Wszystkie filmy</h4>
+		<ol>
+			<li>fdsjkhgsadfhisadfhsadfh</li>
+			<li>fdsjkhgsadfhisadfhsadfh</li>
+			<li>fdsjkhgsadfhisadfhsadfh</li>
+			<li>fdsjkhgsadfhisadfhsadfh</li>
+			<li>fdsjkhgsadfhisadfhsadfh</li>
+			<li>fdsjkhgsadfhisadfhsadfh</li>
+			<li>fdsjkhgsadfhisadfhsadfh</li>
+			<li>fdsjkhgsadfhisadfhsadfh</li>
+			<li>fdsjkhgsadfhisadfhsadfh</li>
+		</ol>
+	</aside>
+	<footer>
+		<p>Autor: 0000000000</p>
+		<a href="asd.txt" download>zapytania do bazy</a>
+		<a href="filmy.pl">Przejdź do filmy.pl</a>
+	</footer>
+	<script>
+		const films = [["shrek1", "shrek2", "shrek3"], ["shrek4", "shrek5", "shrek6"], ["shrek7", "shrek8", "shrek9"], ["shrek10", "shrek11", "shrek12"]]
+		
+		filmy.addEventListener("change", function(){
+			let x = films[filmy.value];
+			for(i of x){
+				let p = document.createElement("p");
+				p.innerHTML = "Tytuł: " + i;
+				
+				
+				
+			}
+			
+			
+			
+			
+		})
+	
+	
+	</script>
+</body>
+</html>

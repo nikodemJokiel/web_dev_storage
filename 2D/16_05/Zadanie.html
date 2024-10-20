@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zmiana liter</title>
+    </head>
+    <body>
+        <input type="text" id="inp" placeholder="podaj 2 słowa">
+        <button id="btn">zamień</button>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <script>
+            
+            btn.addEventListener("click", function(){
+                let r = /^[a-z]{2,}\s[a-z]{2,}$/
+                
+                
+                let w = inp.value;
+                
+                if (r.test(w)){
+                    let i = w.indexOf(" ");
+                
+                    let firstLetter = w.charAt(0);
+                    let firstLetter2 = w.charAt(i+1);
+                    p1.innerHTML = w;
+
+                    let w2 = w.replace(firstLetter2,firstLetter);
+                    p2.innerHTML = w2.replace(firstLetter,firstLetter2);
+                }
+                else{
+                    console.log("no")
+                }
+                
+                
+            })
+        </script>
+    </body>
+</html>
